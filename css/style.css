@@ -15,7 +15,7 @@ body a{
 	-o-transition: 0.5s all;
 }
 .header{
-	background-color: rgba(20,20,20,1);
+	background-color: #8E44AD;
 	padding: 1.5% 0;
 }
 .header-left{
@@ -411,10 +411,10 @@ li.list_desc h4 a:hover{
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
-	background: #000;
+	background: #DB0A5B;
 }
 .button a:hover{
-	background:#222;
+	background:#F1A9A0;
 }
 .login_button{
 	float:right;
@@ -433,11 +433,11 @@ li.list_desc h4 a:hover{
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
-	background: #000;
+	background: #DB0A5B;
 	margin:10px 0 0;
 }
 .login_button a:hover{
-	background:#555;
+	background:#F1A9A0;
 }
 .check_button{
 	float:left;
@@ -607,6 +607,7 @@ i.close1{
    overflow: hidden;
    top: 0;
    left: 0;
+ 
 }
 .view img {
    display: block;
@@ -648,10 +649,10 @@ i.close1{
 }
 /* NINTH EXAMPLE*/
 .view-ninth .mask-1, .view-ninth .mask-2 {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(241, 169, 160, 0.5); 
     height: 361px;
     width: 361px;
-    background: rgba(119, 0, 36, 0.5);
+    background: rgba(219, 10, 91, 0.5);
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
     opacity: 1;
@@ -754,6 +755,7 @@ i.close1{
 }
 h4.m_4{
 	margin-top:10%;
+    
 }
 h4.m_4 a{
 	color:#000;
@@ -771,7 +773,7 @@ p.m_5{
 }
 /*--footer--*/
 .footer{
-	background:#000;
+	background:#8E44AD;
 	padding:5% 0;
 }		
 ul.footer_box{
@@ -1166,6 +1168,8 @@ p.m_7{
 	font-size:0.85em;
 	line-height:1.5em;
 	margin-bottom:2%;
+    text-align: justify;
+    text-justify: inter-word;
 }
 .img_section{
 	position:relative;
@@ -1887,6 +1891,7 @@ fieldset.input input[type="submit"]:hover {
  }
  .team_bottom{
  	margin-bottom:20px;
+     
  }
  .team_box {
 	margin-bottom:0;
@@ -2039,4 +2044,22 @@ h4.m_11 {
     margin-left: auto;
     margin-right: 40%;
     width: 60%;
+}
+
+.current {
+    background-color: #F1A9A0;
+    color: white;
+}
+
+.page {
+    background-color: #BE90D4;
+    color: white;
+}
+
+.bookbutton {
+    background-color: #DB0A5B;
+}
+
+.banner {
+    max-height: 500px;
 }
