@@ -2063,3 +2063,11 @@ h4.m_11 {
 .banner {
     
 }
+
+.whitebg {
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
