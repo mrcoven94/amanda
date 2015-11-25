@@ -1,361 +1,459 @@
 <!DOCTYPE HTML>
+<!--
+	Highlights by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-   <head>
-      <title>Home | NailedIt </title>
-      <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-      <link href="css/style.css" rel='stylesheet' type='text/css' />
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-      <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-      <script src="js/jquery.min.js"></script>
-      <!--<script src="js/jquery.easydropdown.js"></script>-->
-      <!--start slider -->
-      <link rel="stylesheet" href="css/fwslider.css" media="all">
-      <script src="js/jquery-ui.min.js"></script>
-      <script src="js/fwslider.js"></script>
-      <!--end slider -->
-      <script type="text/javascript">
-         $(document).ready(function() {
-         $(".dropdown img.flag").addClass("flagvisibility");
-         $(".dropdown dt a").click(function() {
-         $(".dropdown dd ul").toggle();
-         });
-         $(".dropdown dd ul li a").click(function() {
-         var text = $(this).html();
-         $(".dropdown dt a span").html(text);
-         $(".dropdown dd ul").hide();
-         $("#result").html("Selected value is: " + getSelectedValue("sample"));
-         });
-         function getSelectedValue(id) {
-         return $("#" + id).find("dt a span.value").html();
-         }
-         $(document).bind('click', function(e) {
-         var $clicked = $(e.target);
-         if (! $clicked.parents().hasClass("dropdown"))
-         $(".dropdown dd ul").hide();
-         });
-         $("#flagSwitcher").click(function() {
-         $(".dropdown img.flag").toggleClass("flagvisibility");
-         });
-         });
-      </script>
-   </head>
-   <body>
-      <div class="header">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="header-left">
-                     <div class="logo">
-                        <a href="index.html"><img src="images/Shop-Open-48.png" alt=""/></a>
-                     </div>
-                     <div class="menu">
-                        <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
-                        <ul class="nav" id="nav">
-                           <li class=""><a href="about.html">About Amanda</a></li>
-                           <li class=""><a href="pricing.html"> Pricing </a></li>
-                           <li class=""><a href="book.html"> Book Amanda</a></li>
-                           <div class="clear"></div>
-                        </ul>
-                        <script type="text/javascript" src="js/responsive-nav.js"></script>
-                     </div>
-                     <div class="clear"></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="banner">
-         <!-- start slider -->
-         <div id="fwslider">
-            <div class="slider_container">
-               <div class="slide">
-                  <!-- Slide image -->
-                  <img src="images/slide1.jpg" class="img-responsive" alt=""/>
-                  <!-- /Slide image -->
-                  <!-- Texts container -->
-                  <div class="slide_content">
-                     <div class="slide_content_wrap">
-                        <!-- Text title -->
-                        <h1 class="title">Get The Best<br>Nails</h1>
-                        <!-- /Text title -->
-                        <div class="button"><a href="pricing.html">See Details</a></div>
-                     </div>
-                  </div>
-                  <!-- /Texts container -->
-               </div>
-               <!-- /Duplicate to create more slides -->
-               <div class="slide">
-                  <img src="images/slide2.jpg" class="img-responsive" alt=""/>
-                  <div class="slide_content">
-                     <div class="slide_content_wrap">
-                        <h1 class="title">Custom Designs<br>Within Your Budget</h1>
-                        <div class="button"><a href="pricing.html">See Details</a></div>
-                     </div>
-                  </div>
-               </div>
-               <div class="slide">
-                  <img src="images/3.jpg" class="img-responsive" alt=""/>
-                  <div class="slide_content">
-                     <div class="slide_content_wrap">
-                        <h1 class="title whitebg">Tame Your<br>Fingertips</h1>
-                        <div class="button"><a href="pricing.html">See Details</a></div>
-                     </div>
-                  </div>
-               </div>
-               <!--/slide -->
-            </div>
-            <div class="timers"></div>
-            <div class="slidePrev"><span></span></div>
-            <div class="slideNext"><span></span></div>
-         </div>
-         <!--/slider -->
-      </div>
-      <div class="features">
-         <div class="container">
-            <h3 class="m_3">Featured Nails</h3>
-            <div class="row">
-            
-              <div class="col-md-3 top_box">
-               <div class="view view-ninth">
-                  <a href="pricing.html">
-                     <img src="images/nails/new1.jpg" class="img-responsive" alt=""/>
-                     <div class="mask mask-1"> </div>
-                     <div class="mask mask-2"> </div>
-                     <!--<div class="content">-->
-                     <!--   <h2>Silver Celestial</h2>-->
-                     <!--   <p>2 Accent Nails $7</p>-->
-                     <!--</div>-->
-                  </a>
-               </div>
-               <h4 class="m_4"><a href="pricing.html" style="color:white;">Beautiful Nails!</a></h4>
-               <p class="m_5" style="color:white;">Always in style! </p>
-            </div>
+	<head>
+		<title>Amanda Loh</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
 
-              <div class="col-md-3 top_box">
-               <div class="view view-ninth">
-                  <a href="pricing.html">
-                     <img src="images/nails/new2.jpg" class="img-responsive" alt=""/>
-                     <div class="mask mask-1"> </div>
-                     <div class="mask mask-2"> </div>
-                     <!--<div class="content">-->
-                     <!--   <h2>Silver Celestial</h2>-->
-                     <!--   <p>2 Accent Nails $7</p>-->
-                     <!--</div>-->
-                  </a>
-               </div>
-               <h4 class="m_4"><a href="pricing.html" style="color:white;">Beautiful Nails!</a></h4>
-               <p class="m_5" style="color:white;">Always in style! </p>
-            </div>
+		<!-- Header -->
+			<section id="header">
+				<header class="major">
+					<h1>Amanda Loh</h1>
+					<p>Engineer. Innovator. Ballerina. Roboticist.</p>
+				</header>
+				<div class="container">
+					<ul class="actions">
+						<li><a href="#one" class="button special scrolly">Begin</a></li>
+					</ul>
+				</div>
+			</section>
 
-              <div class="col-md-3 top_box">
-               <div class="view view-ninth">
-                  <a href="pricing.html">
-                     <img src="images/nails/new3.jpg" class="img-responsive" alt=""/>
-                     <div class="mask mask-1"> </div>
-                     <div class="mask mask-2"> </div>
-                     <!--<div class="content">-->
-                     <!--   <h2>Silver Celestial</h2>-->
-                     <!--   <p>2 Accent Nails $7</p>-->
-                     <!--</div>-->
-                  </a>
-               </div>
-               <h4 class="m_4"><a href="pricing.html" style="color:white;">Beautiful Nails!</a></h4>
-               <p class="m_5" style="color:white;">Always in style! </p>
-            </div>
+		<!-- One -->
+			<section id="one" class="main special">
+				<div class="container">
+					<span class="image fit primary"><img src="images/pic01.jpg" alt="" /></span>
+					<div class="content">
+						<header class="major">
+							<h2>Who I am</h2>
+						</header>
+						<p>
 
-              <div class="col-md-3 top_box">
-               <div class="view view-ninth">
-                  <a href="pricing.html">
-                     <img src="images/nails/new4.jpg" class="img-responsive" alt=""/>
-                     <div class="mask mask-1"> </div>
-                     <div class="mask mask-2"> </div>
-                     <!--<div class="content">-->
-                     <!--   <h2>Silver Celestial</h2>-->
-                     <!--   <p>2 Accent Nails $7</p>-->
-                     <!--</div>-->
-                  </a>
-               </div>
-               <h4 class="m_4"><a href="pricing.html" style="color:white;">Beautiful Nails!</a></h4>
-               <p class="m_5" style="color:white;">Always in style! </p>
-            </div>
+						I am currently pursuing a double degree in Computer Science and Electrical Engineering at the University of Washington. My goal is someday to build robots that can help people overcome injury, disabilities, and other hardships. During my undergraduate studies, she loves to do nail art for the University of Washington community around my to express my creativity and be innovative.</p>
+					</div>
+					<a href="#two" class="goto-next scrolly">Next</a>
+				</div>
+			</section>
 
+		<!-- Two -->
+			<section id="two" class="main special">
+				<div class="container">
+					<span class="image fit primary"><img src="images/pic02.jpg" alt="" /></span>
+					<div class="content">
+						<header class="major">
+							<h2>Stuff I do</h2>
+						</header>
+						<p>Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet vulputate.</p>
+						<ul class="icons-grid">
+							<li>
+								<span class="icon major fa-music"></span>
+								<h3>Ballerina</h3>
+							</li>
+							<li>
+								<span class="icon major fa-paint-brush"></span>
+								<h3>Nail Art <br></h3>
+							</li>
+							<li>
+								<span class="icon major fa-code"></span>
+								<h3>DubHacks / Facebook Hackathons</h3>
+							</li>
+							<li>
+								<span class="icon major fa-cogs"></span>
+								<h3>Tesla Motors &amp; <br> Eco Car</h3>
+							</li>
+						</ul>
+					</div>
+					<a href="#three" class="goto-next scrolly">Next</a>
+				</div>
+			</section>
 
+		<!-- Three -->
+			<section id="three" class="main special">
+				<div class="container">
+					<span class="image fit primary"><img src="images/pic03.jpg" alt="" /></span>
+					<div class="content">
+						<header class="major">
+							<h2>One more thing</h2>
+						</header>
+						<p>I have a great amount of work experience in the performing arts which has aided me considerably in the engineering world in terms of thinking outside the box and being able to work well with others. I am currently concentrating in controls in Electrical Engineering and, hopefully, AI and machine learning in computer science. One day I hope to put my expertise in controls, AI, and machine learning together to build an effective robot from the ground up.</p>
+					</div>
+					<a href="#footer" class="goto-next scrolly">Next</a>
+				</div>
+			</section>
 
+		<!-- Four -->
+		<!--
+			<section id="four" class="main">
+				<div class="container">
+					<div class="content">
+						<header class="major">
+							<h2>Elements</h2>
+						</header>
+						<section>
+							<h4>Text</h4>
+							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+							<hr />
+							<header>
+								<h4>Heading with a Subtitle</h4>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<header>
+								<h5>Heading with a Subtitle</h5>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<hr />
+							<h2>Heading Level 2</h2>
+							<h3>Heading Level 3</h3>
+							<h4>Heading Level 4</h4>
+							<h5>Heading Level 5</h5>
+							<h6>Heading Level 6</h6>
+							<hr />
+							<h5>Blockquote</h5>
+							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+							<h5>Preformatted</h5>
+							<pre><code>i = 0;
 
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
 
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+						</section>
 
+						<section>
+							<h4>Lists</h4>
+							<div class="row">
+								<div class="6u 12u$(medium)">
+									<h5>Unordered</h5>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+									<h5>Alternate</h5>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+								</div>
+								<div class="6u$ 12u(medium)">
+									<h5>Ordered</h5>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h5>Icons</h5>
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<h5>Actions</h5>
+							<ul class="actions">
+								<li><a href="#" class="button special">Default</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions small">
+								<li><a href="#" class="button special small">Small</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<div class="row">
+								<div class="6u 12u$(small)">
+									<ul class="actions vertical">
+										<li><a href="#" class="button special">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</div>
+								<div class="6u$ 12u$(small)">
+									<ul class="actions vertical small">
+										<li><a href="#" class="button special small">Small</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+								</div>
+								<div class="6u 12u$(small)">
+									<ul class="actions vertical">
+										<li><a href="#" class="button special fit">Default</a></li>
+										<li><a href="#" class="button fit">Default</a></li>
+									</ul>
+								</div>
+								<div class="6u$ 12u$(small)">
+									<ul class="actions vertical small">
+										<li><a href="#" class="button special small fit">Small</a></li>
+										<li><a href="#" class="button small fit">Small</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
 
+						<section>
+							<h4>Table</h4>
+							<h5>Default</h5>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
 
+							<h5>Alternate</h5>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
 
+						<section>
+							<h4>Buttons</h4>
+							<ul class="actions">
+								<li><a href="#" class="button special">Special</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button">Default</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<ul class="actions fit">
+								<li><a href="#" class="button special fit">Fit</a></li>
+								<li><a href="#" class="button fit">Fit</a></li>
+							</ul>
+							<ul class="actions fit small">
+								<li><a href="#" class="button special fit small">Fit + Small</a></li>
+								<li><a href="#" class="button fit small">Fit + Small</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button special icon fa-download">Icon</a></li>
+								<li><a href="#" class="button icon fa-download">Icon</a></li>
+							</ul>
+							<ul class="actions">
+								<li><span class="button special disabled">Disabled</span></li>
+								<li><span class="button disabled">Disabled</span></li>
+							</ul>
+						</section>
 
+						<section>
+							<h4>Form</h4>
+							<form method="post" action="#">
+								<div class="row uniform">
+									<div class="6u 12u$(xsmall)">
+										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+									</div>
+									<div class="6u$ 12u$(xsmall)">
+										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+									</div>
+									<div class="12u$">
+										<div class="select-wrapper">
+											<select name="demo-category" id="demo-category">
+												<option value="">- Category -</option>
+												<option value="1">Manufacturing</option>
+												<option value="1">Shipping</option>
+												<option value="1">Administration</option>
+												<option value="1">Human Resources</option>
+											</select>
+										</div>
+									</div>
+									<div class="4u 12u$(small)">
+										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+										<label for="demo-priority-low">Low</label>
+									</div>
+									<div class="4u 12u$(small)">
+										<input type="radio" id="demo-priority-normal" name="demo-priority">
+										<label for="demo-priority-normal">Normal</label>
+									</div>
+									<div class="4u$ 12u$(small)">
+										<input type="radio" id="demo-priority-high" name="demo-priority">
+										<label for="demo-priority-high">High</label>
+									</div>
+									<div class="6u 12u$(small)">
+										<input type="checkbox" id="demo-copy" name="demo-copy">
+										<label for="demo-copy">Email me a copy</label>
+									</div>
+									<div class="6u$ 12u$(small)">
+										<input type="checkbox" id="demo-human" name="demo-human" checked>
+										<label for="demo-human">Not a robot</label>
+									</div>
+									<div class="12u$">
+										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+									</div>
+									<div class="12u$">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="special" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
 
+						<section>
+							<h4>Image</h4>
+							<h5>Fit</h5>
+							<div class="box alt">
+								<div class="row uniform 50%">
+									<div class="12u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+									<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+								</div>
+							</div>
+							<h5>Left &amp; Right</h5>
+							<p><span class="image left"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+							<p><span class="image right"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+						</section>
 
-              <div class="col-md-3 top_box">
-               <div class="view view-ninth">
-                  <a href="pricing.html">
-                     <img src="images/nails/blackandsilver.png" class="img-responsive" alt=""/>
-                     <div class="mask mask-1"> </div>
-                     <div class="mask mask-2"> </div>
-                     <!--<div class="content">-->
-                     <!--   <h2>Silver Celestial</h2>-->
-                     <!--   <p>2 Accent Nails $7</p>-->
-                     <!--</div>-->
-                  </a>
-               </div>
-               <h4 class="m_4"><a href="pricing.html" style="color:white;">Beautiful Nails!</a></h4>
-               <p class="m_5" style="color:white;">Always in style! </p>
-            </div>
-            <div class="col-md-3 top_box">
-               <div class="view view-ninth">
-                  <a href="pricing.html">
-                     <img src="images/nails/blackflowers.png" class="img-responsive" alt=""/>
-                     <div class="mask mask-1"> </div>
-                     <div class="mask mask-2"> </div>
-                     <!--<div class="content">-->
-                     <!--   <h2>Silver Celestial</h2>-->
-                     <!--   <p>2 Accent Nails $7</p>-->
-                     <!--</div>-->
-                  </a>
-               </div>
-               <h4 class="m_4"><a href="pricing.html" style="color:white;">Beautiful Nails!</a></h4>
-               <p class="m_5" style="color:white;">Always in style! </p>
-            </div>
-            <div class="col-md-3 top_box">
-               <div class="view view-ninth">
-                  <a href="pricing.html">
-                     <img src="images/nails/colorfuldots.png" class="img-responsive" alt=""/>
-                     <div class="mask mask-1"> </div>
-                     <div class="mask mask-2"> </div>
-                     <!--<div class="content">-->
-                     <!--   <h2>Silver Celestial</h2>-->
-                     <!--   <p>2 Accent Nails $7</p>-->
-                     <!--</div>-->
-                  </a>
-               </div>
-               <h4 class="m_4"><a href="pricing.html" style="color:white;">Beautiful Nails!</a></h4>
-               <p class="m_5" style="color:white;">Always in style! </p>
-            </div>
-            <div class="col-md-3 top_box1">
-               <div class="view view-ninth">
-                  <a href="pricing.html">
-                     <img src="images/nails/goldandblack.png" class="img-responsive" alt=""/>
-                     <div class="mask mask-1"> </div>
-                     <div class="mask mask-2"> </div>
-                     <!--<div class="content">-->
-                     <!--   <h2>Silver Celestial</h2>-->
-                     <!--   <p>2 Accent Nails $7</p>-->
-                     <!--</div>-->
-                  </a>
-               </div>
-               <h4 class="m_4"><a href="pricing.html" style="color:white;">Beautiful Nails!</a></h4>
-               <p class="m_5" style="color:white;">Always in style! </p>
-            </div>
-            <div class="col-md-3 top_box">
-               <div class="view view-ninth">
-                  <a href="pricing.html">
-                     <img src="images/nails/hellokitty.png" class="img-responsive" alt=""/>
-                     <div class="mask mask-1"> </div>
-                     <div class="mask mask-2"> </div>
-                     <!--<div class="content">-->
-                     <!--   <h2>Silver Celestial</h2>-->
-                     <!--   <p>2 Accent Nails $7</p>-->
-                     <!--</div>-->
-                  </a>
-                  </div
-               </div>
-               <h4 class="m_4"><a href="pricing.html" style="color:white;">Beautiful Nails!</a></h4>
-               <p class="m_5" style="color:white;">Always in style! </p>
-            </div>
-            <div class="col-md-3 top_box">
-               <div class="view view-ninth">
-                  <a href="pricing.html">
-                     <img src="images/nails/ladybug.png" class="img-responsive" alt=""/>
-                     <div class="mask mask-1"> </div>
-                     <div class="mask mask-2"> </div>
-                     <!--<div class="content">-->
-                     <!--   <h2>Silver Celestial</h2>-->
-                     <!--   <p>2 Accent Nails $7</p>-->
-                     <!--</div>-->
-                  </a>
-                  </div
-               </div>
-               <h4 class="m_4"><a href="pricing.html" style="color:white;">Beautiful Nails!</a></h4>
-               <p class="m_5" style="color:white;">Always in style! </p>
-            </div>
-            <div class="col-md-3 top_box">
-               <div class="view view-ninth">
-                  <a href="pricing.html">
-                     <img src="images/nails/saintpattys.png" class="img-responsive" alt=""/>
-                     <div class="mask mask-1"> </div>
-                     <div class="mask mask-2"> </div>
-                     <!--<div class="content">-->
-                     <!--   <h2>Silver Celestial</h2>-->
-                     <!--   <p>2 Accent Nails $7</p>-->
-                     <!--</div>-->
-                  </a>
-                  </div
-               </div>
-               <h4 class="m_4"><a href="pricing.html" style="color:white;">Beautiful Nails!</a></h4>
-               <p class="m_5" style="color:white;">Always in style! </p>
-            </div>
-            <div class="col-md-3 top_box">
-               <div class="view view-ninth">
-                  <a href="pricing.html">
-                     <img src="images/nails/seahawks.png" class="img-responsive" alt=""/>
-                     <div class="mask mask-1"> </div>
-                     <div class="mask mask-2"> </div>
-                     <!--<div class="content">-->
-                     <!--   <h2>Silver Celestial</h2>-->
-                     <!--   <p>2 Accent Nails $7</p>-->
-                     <!--</div>-->
-                  </a>
-                  </div
-               </div>
-               <h4 class="m_4"><a href="pricing.html" style="color:white;">Beautiful Nails!</a></h4>
-               <p class="m_5" style="color:white;">Always in style! </p>
-            </div>
-         </div>
-      </div>
-      </div>
-      <div class="form-submit col-md-7" style="padding-bottom:50px;">
-         <a href="book.html" ><input type="submit" value="Book Now" style="background:#9B59B6;"></a><br>
-      </div>
-      <div class="footer">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-3">
-                  <ul class="footer_box">
-                     <h4>About</h4>
-                     <li><a href="about.html">Learn about the Artist </a></li>
-                  </ul>
-                  <br>
-                  <ul class="footer_box">
-                     <h4>Feedback</h4>
-                     <li><a target="_blank" href="https://amanda159.typeform.com/to/W5ZY7k">Leave Feedback &amp; Reviews</a></li>
-                  </ul>
-               </div>
-               <div class="pull-right">
-                  <div class="col-md-12">
-                     <ul class="footer_box">
-                        <ul class="social">
-                           <li class="facebook"><a href="#"><span> </span></a></li>
-                           <li class="twitter"><a href="#"><span> </span></a></li>
-                           <li class="instagram"><a href="#"><span> </span></a></li>
-                           <li class="pinterest"><a href="#"><span> </span></a></li>
-                           <li class="youtube"><a href="#"><span> </span></a></li>
-                        </ul>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-            <div class="row footer_bottom">
-               <div class="copy">
-                  <p>© 2015 Amanda Loh</p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </body>
+					</div>
+					<a href="#footer" class="goto-next scrolly">Next</a>
+				</div>
+			</section>
+		-->
+
+		<!-- Footer -->
+			<section id="footer">
+				<div class="container">
+					<header class="major">
+						<h2>Get in touch</h2>
+					</header>
+					<form method="post" action="#">
+						<!-- <div class="row uniform">
+							<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+							<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+							<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+							<div class="12u$"> -->
+								<ul class="actions">
+									<li><a href="mailto:coven@uw.edu"><button class="special">Contact Me</button></a></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+				<footer>
+					<ul class="icons">
+						<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Amanda Loh</li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
